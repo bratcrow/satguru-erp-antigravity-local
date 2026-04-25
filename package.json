@@ -1,0 +1,40 @@
+{
+  "name": "hari-har-namkeen-erp",
+  "version": "0.1.0",
+  "private": true,
+  "main": "electron/main.js",
+  "scripts": {
+    "dev": "next dev",
+    "build": "prisma generate && next build",
+    "start": "next start",
+    "lint": "next lint",
+    "db:push": "prisma db push",
+    "electron:start": "electron ."
+  },
+  "dependencies": {
+    "@ducanh2912/next-pwa": "^10.2.9",
+    "@prisma/client": "^5.12.0",
+    "@types/bcrypt": "^6.0.0",
+    "bcrypt": "^6.0.0",
+    "lucide-react": "^0.368.0",
+    "next": "14.2.0",
+    "next-auth": "^4.24.14",
+    "react": "^18",
+    "react-dom": "^18"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "electron": "^41.2.1",
+    "eslint": "^8",
+    "eslint-config-next": "14.2.0",
+    "postcss": "^8",
+    "prisma": "^5.12.0",
+    "typescript": "^5",
+    "wait-on": "^9.0.5"
+  },
+  "prisma": {
+    "seed": "node seedUser.js"
+  }
+}
