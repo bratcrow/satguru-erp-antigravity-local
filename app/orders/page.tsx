@@ -2,6 +2,8 @@ import { getCustomers } from '@/app/actions/customerActions';
 import { getProducts } from '@/app/actions/productActions';
 import OrderClient from './OrderClient';
 
+export const dynamic = 'force-dynamic';
+
 export default async function OrdersPage() {
   const customers = await getCustomers();
   const products = await getProducts();

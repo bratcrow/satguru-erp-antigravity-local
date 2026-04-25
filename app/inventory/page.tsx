@@ -1,6 +1,8 @@
 import { getProducts } from '@/app/actions/productActions';
 import InventoryClient from './InventoryClient';
 
+export const dynamic = 'force-dynamic';
+
 export default async function InventoryPage() {
   const products = await getProducts();
 
